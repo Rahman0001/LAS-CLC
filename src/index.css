@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Libre Baskerville', Georgia, serif;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-clc-navy: #0c1829;
+  --color-clc-navy-muted: #162740;
+  --color-clc-navy-surface: #1e3352;
+  --color-clc-gold: #c59b43;
+  --color-clc-gold-muted: #e6c887;
+  --color-clc-gold-dark: #9b7529;
+  --color-clc-cream: #faf9f6;
+  --color-clc-ivory: #f4f1eb;
+  --color-clc-burgundy: #7b1d28;
+  --color-clc-charcoal: #1c2331;
+  --color-clc-border: #e2ded5;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-padding-top: 5.5rem;
+    color: #1c2430;
+    background-color: #fcfbf9;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-serif);
+    color: #0c1829;
+  }
+
+  .font-crest {
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+  }
+
+  /* Accessible focus states */
+  *:focus-visible {
+    outline: 2px solid #c59b43;
+    outline-offset: 2px;
+  }
+
+  /* Academic text selections */
+  ::selection {
+    background-color: #c59b43;
+    color: #0c1829;
+  }
+}
+
+/* Custom Slender Institutional Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f1eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #c59b43;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9b7529;
+}
+
+/* High Contrast Mode Styles */
+.contrast-more {
+  --color-clc-border: #000000;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.contrast-more button,
+.contrast-more a {
+  text-decoration-thickness: 2px;
+}
+

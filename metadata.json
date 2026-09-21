@@ -1,0 +1,6 @@
+{
+  "name": "Legal Aid Society — Campus Law Centre",
+  "description": "Official institutional portal and content management system for the Legal Aid Society of Campus Law Centre (CLC), University of Delhi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
