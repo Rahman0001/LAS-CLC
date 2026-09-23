@@ -54,7 +54,7 @@ import {
 } from './server/db';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Setup uploads directory
 const UPLOADS_DIR = path.join(process.cwd(), 'uploads');
